@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+}
+
+a{
+    padding: 0px 5px 0px 5px ;
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    line-height: 2em;
+    font-family: sans-serif;
+}
+
+a:hover{
+    background-color: #07d6d6;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+#aviso{
+    display: inline-block;
+    padding: 5px;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
