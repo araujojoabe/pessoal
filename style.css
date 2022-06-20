@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, aqua, 20%, #5757ff, #3636f8);
 }
 
 h2{
@@ -20,7 +21,7 @@ h1{
 #imagem{
     position: relative;
     margin: 10px;
-    width: 285px;
+    width: 300px;
     height: 170px;
     margin-bottom: 50px;
 }
@@ -29,7 +30,6 @@ h1{
     margin: 10px 0px 0px 10px;
     width: 100px;
     height: 100px;
-    background-color: aquamarine;
 }
 
 #facebook{
@@ -38,16 +38,14 @@ h1{
     left: 130px;
     width: 40px;
     height: 40px;
-    background-color: aquamarine;
 }
 
 #instagran{
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 180px;
     width: 40px;
     height: 40px;
-    background-color: aquamarine;
 }
 #twiter{
     border-radius: 7px;
@@ -56,7 +54,6 @@ h1{
     left: 230px;
     width: 40px;
     height: 40px;
-    background-color: aquamarine;
 }
 
 
@@ -71,7 +68,7 @@ h1{
 #pimg2{
     position: absolute;
     top: 40px;
-    left: 130px;
+    left: 145px;
     width: 100px;
     margin: 30px 0px 0px 10px;
     text-align: center;
@@ -97,7 +94,12 @@ a:hover{
 #aviso{
     display: inline-block;
     padding: 5px;
-    margin: 10px 0px 0px 20px;
+    margin: 30px 0px 0px 20px;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
     font-family: sans-serif;
-    border: 2px solid black;
+    border: 3px dashed white;
+    font-family: monospace;
+    font-size: 2em;
 }
