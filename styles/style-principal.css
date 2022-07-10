@@ -19,17 +19,42 @@ body{
 
 main{
     position: relative;
-    width: 100vw;
+    max-width: 700px;
+    margin: auto;
     height: 100vh;
+}
+
+#telefone{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-image: url(../imagens/frame-galaxy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 495px;
+    background-color: transparent;
+    border-radius: 20px;
 }
 
 iframe{
     position: absolute;
-    top: 25px;
-    left: 45%;
+    top: 40px;
+    left: 40%;
     transform: translate(-50%);
-    height: 500px;
+    height: 550px;
     width: 250px;
 }
 
+img{
+    width: clamp(3rem, 10vw, 4rem);
+    border-radius: 50%;
+    margin: 10px;
+}
 
+#redes-sociais{
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
