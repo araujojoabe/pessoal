@@ -9,15 +9,10 @@
 body{
     background-image: url(../imagens/fundo-madeira.jpg);
     background-size: cover;
-    background-repeat: no-repeat
-}
-
-main{
-    position: relative;
-    max-width: 700px;
-    margin: auto;
+    background-repeat: no-repeat;
     height: 100vh;
 }
+
 
 #telefone{
     position: absolute;
@@ -29,7 +24,7 @@ main{
     background-repeat: no-repeat;
     width: 250px;
     height: 550px;
-    background-color: green;
+    background-color: yellow;
     border-radius: 20px;
 }
 
