@@ -25,22 +25,15 @@ main{
     left: 40%;
     transform: translate(-50%, -50%);
     background-image: url(../imagens/frame-galaxy.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 230px;
-    height: 495px;
-    background-color: blue;
+    width: 250px;
+    height: 550px;
+    background-color: green;
     border-radius: 20px;
 }
 
-iframe{
-    position: absolute;
-    top: 40px;
-    left: 40%;
-    transform: translate(-50%);
-    height: 550px;
-    width: 250px;
-}
+
 
 img{
     width: clamp(3rem, 10vw, 4rem);
