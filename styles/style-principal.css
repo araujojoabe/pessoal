@@ -5,16 +5,11 @@
     padding: 0px;
 }
 
-html, body{
-    width: 100vw;
-    height: 100vh;
-}
 
 body{
     background-image: url(../imagens/fundo-madeira.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat
 }
 
 main{
