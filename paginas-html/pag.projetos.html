@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag-projetos</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        ::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: auto;
+            border-radius: 20px;
+            row-gap: 25px;
+            column-gap: 15px;
+            background-color: #4242f8;
+            padding: 15px 0px;
+        }
+
+        div{
+            background-color: aqua;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 5px;
+            text-align: center;
+            font-size: 0.95em;
+            font-weight: bold;
+        }
+
+        div.principal{
+            flex-shrink: 1;
+            flex-grow: 0;
+            padding: 5px;
+        }
+        
+        div.adicionado{
+            background-color: rebeccapurple;
+            flex-grow: 0;
+            padding: 2px;
+        }
+
+        span{
+            font-size: 0.65em;
+            color: black;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div class="principal">Mil Milhões <br> <span>Por Andre C. Silva</span></div>
+        <div class="principal">A história do Android <br> <span>Por Prof. Gustavo Guanabara para o curso em vídeo</span><br> </div>
+        <div class="principal">Sem Título <br> <span>Por André c. Silva</span></div>
+        <div class="principal">Cordel Moderno <br> <span>Por Milton Duarte</span></div>
+        <div class="principal">Home</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+        <div class="adicionado">Sem Título</div>
+    </main>
+</body>
+</html>

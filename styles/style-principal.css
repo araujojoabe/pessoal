@@ -33,9 +33,10 @@ body{
 
 img{
     background-attachment: fixed;
-    width: clamp(3rem, 10vw, 4rem);
+    width: clamp(2.5rem, 10vw, 4rem);
     border-radius: 50%;
     margin: 10px;
+    box-sizing: border-box;
 }
 
 #redes-sociais{
@@ -52,4 +53,10 @@ iframe#tela-home{
     width: 238.5px;
     height: 485px;
     border-radius: 25px;
+}
+
+img:hover{
+    border: 2px solid #ffffff8f;
+    transform: translate(-5px, 0px);
+    transition: transform .5s;
 }
