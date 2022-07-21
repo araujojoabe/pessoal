@@ -59,3 +59,9 @@ img:hover{
     transform: translate(-5px, 0px);
     transition: transform .5s;
 }
+
+footer{
+    margin-top: 570px;
+    font-size: 1.2em;
+    color: red;
+}
