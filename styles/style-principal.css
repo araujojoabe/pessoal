@@ -41,9 +41,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     row-gap: 10px;
     column-gap: 10px;
-    padding: 2px;
 }
 
 /* section-perfil */
@@ -56,8 +57,9 @@ section#perfil{
     justify-content: space-evenly;
     align-items: center;
     align-content: flex-start;
-    width: 700px;
-    /* border: 3px solid black; */
+    max-width: 660px;
+    height: 580px;
+    /* border: 1px solid darkorchid; */
     padding: 1px;
     background-color: transparent;
 }
@@ -65,11 +67,9 @@ section#perfil{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     row-gap: 10px;
-    /* border: 2px solid black; */
-    max-width: 380px;
-    min-width: 200px;
+    /* border: 1px solid black; */
+    max-width: 370px;
 
 }
 
@@ -91,20 +91,20 @@ section#perfil{
 div#apresentacao{
     width: 270px;
     max-height: 120px;
-    /* border: 2px solid blue; */
+    /* border: 1px solid blue; */
 }
-#apresentacao #p-01{
+#apresentacao h1{
     font-size: clamp(1.5rem, 10vw, 2.6rem);
     font-family: var(--font-destaque);
     color: var(--cor-de-tes-01);
     font-weight: bold;
 }
 
-#p-01 span{
+div#apresentacao span{
     color: var(--cord01);
 }
 
-#apresentacao #p-02{
+#apresentacao p{
     font-size: 1em;
     font-family: sans-serif;
 }
@@ -127,4 +127,37 @@ div#redes-sociais{
 }
 
 /* section-sobre */
+section#sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    flex-grow: 1;
+    /* width: 500px; */
+    height: 580px;
+    /* border: 1px solid darkorchid; */
+}
+div#icones{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+    /* border: 1px solid darkgreen; */
+}
+
+#icones img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--cor01);
+}
+
+div#frame-galaxy iframe{
+    width: 30vw;
+    max-width: 280px;
+    min-width: 240px;
+    height: 100%;
+    border: 0px;
+}
 
