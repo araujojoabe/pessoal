@@ -152,14 +152,12 @@ div#icones{
     height: 40px;
     border-radius: 10px;
     background-color: var(--cor01);
-    transition: transform 2s, box-shadow 1s;
+    transition: margin .03s, box-shadow .5s;
 }
 
-#icones img:hover{
-    transform: rotate(360deg);
-    transition: transform 2s;
-    box-sizing: border-box;
-    /* box-shadow: 30px 0px 10px var(--cor01); */
+#icones img:active{
+    margin-left: 10px;
+    box-shadow: -20px 0px 2px var(--cor03);
 }
 
 div#frame-galaxy iframe{
