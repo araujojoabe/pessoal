@@ -155,10 +155,11 @@ div#icones{
 
 div#frame-galaxy iframe{
     width: 30vw;
-    max-width: 280px;
-    min-width: 240px;
+    max-width: 16em;
+    min-width: 14.5em;
     height: 100%;
     border: 0px;
+
 }
 
 footer{
@@ -167,5 +168,6 @@ footer{
 
 footer p{
     text-align: center;
+    padding: 5px;
 }
 
