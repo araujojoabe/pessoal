@@ -153,12 +153,15 @@ div#icones{
     height: 40px;
     border-radius: 10px;
     background-color: var(--cor01);
-    transition: margin .03s, box-shadow .5s;
 }
 
 #icones img:active{
-    margin-left: 10px;
-    box-shadow: -20px 0px 2px var(--cor03);
+    margin-left: 3px;
+    box-shadow: -10px 0px 2px var(--cor03);
+}
+
+a:active{
+    background-color: transparent;
 }
 
 div#frame-galaxy{
