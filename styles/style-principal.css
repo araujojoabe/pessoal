@@ -160,13 +160,28 @@ div#icones{
     box-shadow: -20px 0px 2px var(--cor03);
 }
 
-div#frame-galaxy iframe{
-    width: 30vw;
-    max-width: 16em;
-    min-width: 14.5em;
-    height: 100%;
-    border: 0px;
+div#frame-galaxy{
+    position: relative;
+    width: 17em;
+    height: 580px;
+    /* border: 1px solid darkgoldenrod; */
+}
 
+div#frame-galaxy img{
+    width: 17em;
+    height: 100%;
+    /* border: 1px solid darkgreen; */
+
+} 
+
+div#frame-galaxy iframe{
+    position: absolute;
+    top: 2.1em;
+    left: 10px;
+    width: 16em;
+    height: 33em;
+    border: 0px;
+    border-radius: 25px;
 }
 
 footer{
