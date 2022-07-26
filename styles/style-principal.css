@@ -23,7 +23,9 @@
     font-family: var(--font-destaque);
 }
 
-
+a:active{
+    background-color: transparent;
+}
 
 
 ::-webkit-scrollbar{
@@ -33,7 +35,7 @@
 
 body{
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom, #4D5859, #222625, #0D0400);
+    background-image: linear-gradient(to bottom, #4D5859, #191b1b);
 }
 
 /* container-principal */
@@ -59,7 +61,7 @@ section#perfil{
     align-items: center;
     align-content: flex-start;
     max-width: 660px;
-    height: 580px;
+    height: 520px;
     /* border: 1px solid darkorchid; */
     padding: 1px;
     background-color: transparent;
@@ -134,16 +136,23 @@ div#redes-sociais{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     row-gap: 5px;
     column-gap: 5px;
     width: 270px;
-    /* border: 2px solid darkgreen; */
+    height: 50px;
+    /* border: 1px solid darkgreen; */
 }
 
 #redes-sociais img{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+div#redes-sociais img:active{
+    margin-bottom: 7px;
+    background-color: var(--cord01);
 }
 
 /* section-sobre */
@@ -167,7 +176,10 @@ div#icones{
 }
 
 #icones div{
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55px;
     /* border: 1px solid darkblue; */
 }
 
@@ -180,7 +192,15 @@ div#icones{
 
 }
 
+#icones img:active{
+    margin-left: 15px;
+    box-shadow: -10px 0px 2px var(--cor03);
+}
 
+#icones p{
+    font-size: .7em;
+    text-align: center;
+}
 
 div#frame-galaxy{
     position: relative;
