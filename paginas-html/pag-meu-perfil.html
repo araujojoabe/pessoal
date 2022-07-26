@@ -18,17 +18,47 @@
             height: 0px;
         }
 
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-        p{
-            font-size: 4em;
+        div{
+            margin-top: 50%;
+        }
+
+        .anima{
+            font-size: 1.5em;
             text-align: center;
-            margin-top: 60%;
-            color: darkgray;
+            display: inline-block;
+            color: black;
+            max-width: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid black;
+            padding-right: 5px;
+            animation: pisca normal infinite .8s, escrever infinite 5s steps(55) both;
+        }
+
+
+        @keyframes pisca{
+            100%{
+                border-right-color: transparent;
+            }
+        }
+
+        @keyframes escrever {
+            100%{
+                max-width: 100%;
+            }
         }
         
     </style>
 </head>
 <body>
- <p>Em breve...</p>
+ <div>
+     <p class="anima">Em breve...</p>
+ </div>
 </body>
 </html>

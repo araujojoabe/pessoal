@@ -106,8 +106,27 @@ div#apresentacao span{
 }
 
 #apresentacao p{
+    display: inline-block;
+    color: black;
     font-size: 1em;
-    font-family: sans-serif;
+    border-right: 3px solid black;
+    padding-right: 3px;
+    max-width: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: pisca normal infinite .8s, escrever infinite 7s steps(55) both;
+}
+
+@keyframes pisca{
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrever{
+    100%{
+        max-width: 100%;
+    }
 }
 
 
@@ -141,28 +160,27 @@ section#sobre{
 div#icones{
     display: flex;
     flex-wrap: wrap;
-
     align-items: center;
-    width: 40px;
+    width: 55px;
     height: 100%;
     /* border: 1px solid darkgreen; */
+}
+
+#icones div{
+    width: 100%;
+    /* border: 1px solid darkblue; */
 }
 
 #icones img{
     width: 40px;
     height: 40px;
     border-radius: 10px;
+    margin: auto;
     background-color: var(--cor01);
+
 }
 
-#icones img:active{
-    margin-left: 3px;
-    box-shadow: -10px 0px 2px var(--cor03);
-}
 
-a:active{
-    background-color: transparent;
-}
 
 div#frame-galaxy{
     position: relative;

@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pag-projetos</title>
+    <title>pag-home</title>
     <style>
+        @font-face {
+            font-family: "font-destaque";
+            src: url(../fontes/MAKISUPA.TTF);
+            format: ("truetype");
+        }
+        :root{
+            --cor01: #A3B4BF;
+            --cor01: #8D9FA6;
+            --cor03: #4D5859;
+            --cor04: #222625;
+            --cor05: #0D0400;
+            --cor-de-tes-01: #c9c8c8;
+            --cord01: #A67B5D;
+            --cord02: #5DA0A6;
+            --font-destaque: "font-destaque";
+        }
+
         *{
             padding: 0px;
             margin: 0px;
@@ -18,16 +35,83 @@
             height: 0px;
         }
 
+        main{
+            position: relative;
+            width: 15.7em;
+            height: 99vh;
+            padding: 2px;
+            margin: auto;
+            background-color: transparent;
+        }
 
-        p{
-            font-size: 4em;
-            text-align: center;
-            margin-top: 60%;
+
+        div{
+            display: flex;
+            align-content: center;
+            justify-content: flex-start;
+            column-gap: 10px;
+            width: 99%;
+            height: 40px;
+            background-color: transparent;
+        }
+
+        #home{
+            position: absolute;
+            top: 19px;
+        }
+
+        div#projetos{
+            position: absolute;
+            top: 164px;
+        }
+
+        div#sobre-mim{
+            position: absolute;
+            top: 309px;
+        }
+
+        div#meu-curriculo{
+            position: absolute;
+            top: 455px;
         }
         
+        p{
+            align-self: center;
+            font-size: .8em;
+            font-family: var(--font-destaque);
+            color: var(--cor-de-tes-01);
+    
+        }
+
+
+
+        span{
+            display: block;
+            align-self: center;
+            font-size: 2em;
+            transform: scaleX(1.5);
+        }
+
     </style>
 </head>
 <body>
- <p>Em breve...</p>
+ <main>
+        <div id="home">
+            <span>⇦</span> <p>Home</p>
+        </div>
+    
+
+    <div id="projetos">
+        <span>⇦</span> <p>Meus Projetos</p>
+    </div>
+
+    <div id="sobre-mim">
+        <span>⇦</span> <p>Sobre Mim</p>
+    </div>
+
+    <div id="meu-curriculo">
+        <span>⇦</span> <p>Meu Currículo</p>
+    </div>
+ </main>
 </body>
 </html>
