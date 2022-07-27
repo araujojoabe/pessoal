@@ -158,10 +158,7 @@ div#redes-sociais a:active{
     background-color: var(--cord01);
 }
 
-div#redes-sociais img:active{
-    margin-bottom: 7px;
-    background-color: var(--cord01);
-}
+
 
 /* section-sobre */
 section#sobre{
@@ -210,13 +207,8 @@ div#icones{
 #icones a:active{
     margin-left: 15px;
     box-shadow: -10px 0px 2px var(--cor03);
-    background-color: var(--cor01);
 }
 
-#icones img:active{
-    margin-left: 15px;
-    box-shadow: -10px 0px 2px var(--cor03);
-}
 
 #icones p{
     font-size: .7em;
