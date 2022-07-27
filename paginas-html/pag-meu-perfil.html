@@ -11,6 +11,15 @@
             margin: 0px;
             font-family: sans-serif;
         }
+
+
+        body{
+            background-color: darkgray;
+            justify-content: center;
+            display: flex;
+            align-items: flex-start;
+            font-size: .8em;
+        }
         
 
         ::-webkit-scrollbar{
@@ -18,48 +27,89 @@
             height: 0px;
         }
 
-        body{
+        main{
+            background-color: dimgray;
+            width: 20em;
+        }
+
+
+
+        ul{
+            list-style-position: inside;
+            background-color: blueviolet;
+        }
+
+        div#perfil{
             display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
             justify-content: center;
-            align-items: center;
+        }
+        
+        img{
+            width: 200px;
+            border-radius: 20px;
         }
 
-        div{
-            margin-top: 50%;
+        div#links{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid darkblue; */
+            width: 190px;
         }
 
-        .anima{
-            font-size: 1.5em;
-            text-align: center;
-            display: inline-block;
-            color: black;
-            max-width: 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid black;
-            padding-right: 5px;
-            animation: pisca normal infinite .8s, escrever infinite 4s steps(55) both;
-            color: darkturquoise;
-        }
-
-
-        @keyframes pisca{
-            100%{
-                border-right-color: transparent;
-            }
-        }
-
-        @keyframes escrever {
-            100%{
-                max-width: 100%;
-            }
+        #links img{
+            width: 35px;
+            border-radius: 50%;
         }
         
     </style>
 </head>
 <body>
- <div>
-     <p class="anima">Em breve...</p>
- </div>
+ <main>
+        <h1>Sobre mim</h1>
+
+        <div id="perfil">
+            <img src="../imagens/joabe.jpg" alt="perfil">
+            <div id="links">
+                <a href="https://www.instagram.com/job.araujom31/" target="_blank">
+                    <img src="../imagens/logo-instagram.jpg" alt="ico">
+                </a>
+
+                <a href="https://www.facebook.com/jonatas.araujofeitosa" target="_blank">
+                    <img src="../imagens/logo-facebook.jpg" alt="ico">
+                </a>
+
+                <a href="https://twitter.com/JonatasAraujof1" target="_blank">
+                    <img src="../imagens/logo-twitter.jpg" alt="ico">
+                </a>
+
+                <a href="https://github.com/araujojoabe" target="_blank">
+                    <img src="../imagens/logo-github.jpg" alt="ico">
+                </a>
+            </div>
+        </div>
+
+         <ul>
+             <li>21 anos</li>
+             <li>Capricórnio</li>
+             <li>jonatasaraujofeitosa@gmail.com</li>
+             <li>+55 94 8426-2415</li>
+             <li>Palmas/Tocantins/Brasil</li>
+         </ul>
+
+         <h1>Hobbies</h1>
+        <ul>
+            <li>Tocar Violão
+            <li>Aprender
+            <li>Acampamento
+            <li>Artes Marciais
+            <li>Alpinismo
+            <li>Assistir a Filmes
+            <li>Ir pra academia
+            <li>Ouvir música
+        </ul>
+    
+ </main>
 </body>
 </html>
