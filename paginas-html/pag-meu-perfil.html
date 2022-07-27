@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pag-projetos</title>
+    <title>pag-meu-perfi</title>
     <style>
+        
+        @font-face {
+        font-family: "font-destaque";
+        src: url(../fontes/MAKISUPA.TTF);
+        format: ("truetype");
+        }
+
+        :root{
+            --cor01: #A3B4BF;
+            --cor02: #8D9FA6;
+            --cor03: #4D5859;
+            --cor04: #222625;
+            --cor05: #0D0400;
+            --cor-de-tes-01: #c9c8c8;
+            --cord01: #cc9974;
+            --cord02: #A67B5D;
+            --cord03: #6d513e;
+            --cord04: #5DA0A6;
+            --font-destaque: "font-destaque";
+        }
+
         *{
             padding: 0px;
             margin: 0px;
+            box-sizing: border-box;
             font-family: sans-serif;
+            line-height: 1.5em;
         }
 
 
         body{
-            background-color: darkgray;
+            background-color: var(--cor04);
             justify-content: center;
             display: flex;
             align-items: flex-start;
-            font-size: .8em;
         }
         
 
@@ -28,39 +50,59 @@
         }
 
         main{
-            background-color: dimgray;
+            background-color: var(--cor03);
             width: 20em;
         }
 
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: var(--font-destaque);
+            color: var(--cord01);
+        }
 
+        h2{
+            margin-bottom: 10px;
+            font-family: var(--font-destaque);
+            color: var(--cord01);
+            margin: 30px 0px 0px 5px;
+        }
 
         ul{
             list-style-position: inside;
-            background-color: blueviolet;
+            /* background-color: blueviolet; */
+            list-style-type: none;
+            margin: 0px 0px 0px 10px;
+            font-size: .9em;
+            font-weight: bold;
+            color: var(--cor05);
         }
 
         div#perfil{
             display: flex;
             flex-wrap: wrap;
-            row-gap: 10px;
+            row-gap: 15px;
             justify-content: center;
         }
         
-        img{
+        #perfil > img{
             width: 200px;
-            border-radius: 20px;
+            border-radius: 35px;
+            border: 12px solid transparent;
+            outline: 6px solid var(--cord02);
         }
 
         div#links{
             display: flex;
             justify-content: space-between;
             /* border: 1px solid darkblue; */
-            width: 190px;
+            width: 180px;
         }
 
         #links img{
             width: 35px;
             border-radius: 50%;
+            background-color: var(--cord01);
         }
         
     </style>
@@ -98,7 +140,7 @@
              <li>Palmas/Tocantins/Brasil</li>
          </ul>
 
-         <h1>Hobbies</h1>
+         <h2>Hobbies</h2>
         <ul>
             <li>Tocar Violão
             <li>Aprender
