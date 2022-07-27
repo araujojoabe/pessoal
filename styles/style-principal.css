@@ -207,6 +207,7 @@ div#icones{
 #icones a:active{
     margin-left: 15px;
     box-shadow: -10px 0px 2px var(--cor03);
+    background-color: var(--cor01);
 }
 
 
