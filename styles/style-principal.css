@@ -23,9 +23,6 @@
     font-family: var(--font-destaque);
 }
 
-a:active{
-    background-color: transparent;
-}
 
 
 ::-webkit-scrollbar{
@@ -150,6 +147,17 @@ div#redes-sociais{
     height: 40px;
 }
 
+#redes-sociais a{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+div#redes-sociais a:active{
+    margin-bottom: 7px;
+    background-color: var(--cord01);
+}
+
 div#redes-sociais img:active{
     margin-bottom: 7px;
     background-color: var(--cord01);
@@ -190,6 +198,19 @@ div#icones{
     margin: auto;
     background-color: var(--cor01);
 
+}
+
+#icones a{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor01);
+}
+
+#icones a:active{
+    margin-left: 15px;
+    box-shadow: -10px 0px 2px var(--cor03);
+    background-color: var(--cor01);
 }
 
 #icones img:active{
