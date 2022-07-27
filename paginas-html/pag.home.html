@@ -4,25 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pag-home</title>
+    <title>pag-projetos</title>
     <style>
-        @font-face {
-            font-family: "font-destaque";
-            src: url(../fontes/MAKISUPA.TTF);
-            format: ("truetype");
-        }
-        :root{
-            --cor01: #A3B4BF;
-            --cor01: #8D9FA6;
-            --cor03: #4D5859;
-            --cor04: #222625;
-            --cor05: #0D0400;
-            --cor-de-tes-01: #c9c8c8;
-            --cord01: #A67B5D;
-            --cord02: #5DA0A6;
-            --font-destaque: "font-destaque";
-        }
-
         *{
             padding: 0px;
             margin: 0px;
@@ -35,21 +18,47 @@
             height: 0px;
         }
 
-        main{
-            position: relative;
-            width: 15.7em;
-            height: 99vh;
-            padding: 2px;
-            margin: auto;
-            background-color: transparent;
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            margin-top: 50%;
+        }
+
+        .anima{
+            font-size: 1.5em;
+            text-align: center;
+            display: inline-block;
+            color: black;
+            max-width: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid black;
+            padding-right: 5px;
+            animation: pisca normal infinite .8s, escrever infinite 4s steps(55) both;
         }
 
 
+        @keyframes pisca{
+            100%{
+                border-right-color: transparent;
+            }
+        }
+
+        @keyframes escrever {
+            100%{
+                max-width: 100%;
+            }
+        }
+        
     </style>
 </head>
 <body>
- <main>
-        
- </main>
+ <div>
+     <p class="anima">Em breve...</p>
+ </div>
 </body>
 </html>
