@@ -78,6 +78,8 @@ section#perfil{
     max-width:340px;
     min-width: 270px;
     border-radius: 50%;
+    border: 3px solid transparent;
+    outline: 3px solid var(--cord01);
     background-color: transparent;
 }
 
@@ -169,6 +171,7 @@ section#sobre{
     flex-grow: 1;
     /* width: 500px; */
     height: 580px;
+    margin-top: 40px;
     /* border: 1px solid darkorchid; */
 }
 div#icones{
@@ -193,21 +196,14 @@ div#icones{
     height: 40px;
     border-radius: 10px;
     margin: auto;
-    background-color: var(--cor01);
+    background-color: transparent;
 
 }
 
-#icones a{
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: var(--cor01);
-}
 
-#icones a:active{
+#icones img:active{
     margin-left: 15px;
-    box-shadow: -10px 0px 2px var(--cor03);
-    background-color: var(--cor01);
+    box-shadow: -10px 0px 2px var(--cord01);
 }
 
 
