@@ -51,7 +51,7 @@
 
         main{
             background-color: var(--cor03);
-            width: 20em;
+            width: 15.9em;
         }
 
         h1{
@@ -61,21 +61,10 @@
             color: var(--cord01);
         }
 
-        h2{
-            margin-bottom: 10px;
-            font-family: var(--font-destaque);
-            color: var(--cord01);
-            margin: 30px 0px 0px 5px;
-        }
-
         ul{
             list-style-position: inside;
-            /* background-color: blueviolet; */
-            list-style-type: none;
-            margin: 0px 0px 0px 10px;
-            font-size: .9em;
-            font-weight: bold;
-            color: var(--cor05);
+            list-style: none;
+            margin-left: 10px;
         }
 
         div#perfil{
@@ -103,6 +92,28 @@
             width: 35px;
             border-radius: 50%;
             background-color: transparent;
+        }
+
+        div#hobbies{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            row-gap: 15px;
+            column-gap: 15px;
+            margin: 30px 0px 15px 0px;
+            /* border: 1px solid darkgreen; */
+        }
+
+        div#hobbies img{
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--cord02);
+        }
+
+        div#hobbies h2{
+            width: 100%;
+            font-family: var(--font-destaque);
+            color: var(--cord02);
         }
         
     </style>
@@ -140,17 +151,29 @@
              <li>Palmas/Tocantins/Brasil</li>
          </ul>
 
-         <h2>Hobbies</h2>
-        <ul>
-            <li>Tocar Violão
-            <li>Aprender
-            <li>Acampamento
-            <li>Artes Marciais
-            <li>Alpinismo
-            <li>Assistir a Filmes
-            <li>Ir pra academia
-            <li>Ouvir música
-        </ul>
+         <div id="hobbies">
+             <h2>Hobbies</h2>
+             <img src="../imagens/hobbies/img-01.png" alt="ico">
+             <img src="../imagens/hobbies/img-02.png" alt="ico">
+             <img src="../imagens/hobbies/img-03.png" alt="ico">
+             <img src="../imagens/hobbies/img-04.png" alt="ico">
+             <img src="../imagens/hobbies/img-05.png" alt="ico"> 
+             <img src="../imagens/hobbies/img-06.png" alt="ico">
+             <img src="../imagens/hobbies/img-07.png" alt="ico">
+             <img src="../imagens/hobbies/img-08.png" alt="ico">
+             <img src="../imagens/hobbies/img-09.png" alt="ico">
+             <img src="../imagens/hobbies/img-10.png" alt="ico">
+             <img src="../imagens/hobbies/img-11.png" alt="ico">
+             <img src="../imagens/hobbies/img-12.png" alt="ico">
+             <img src="../imagens/hobbies/img-13.png" alt="ico">
+             <img src="../imagens/hobbies/img-14.png" alt="ico">
+             <img src="../imagens/hobbies/img-15.png" alt="ico">
+             <img src="../imagens/hobbies/img-16.png" alt="ico">
+             <img src="../imagens/hobbies/img-17.png" alt="ico">
+             <img src="../imagens/hobbies/img-18.png" alt="ico">
+             <img src="../imagens/hobbies/img-19.png" alt="ico">
+             <img src="../imagens/hobbies/img-20.png" alt="ico">
+        </div>
     
  </main>
 </body>
