@@ -168,7 +168,7 @@ section#sobre{
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-grow: 1;
-    /* width: 500px; */
+    /* width: 400px; */
     height: 620px;
     /* border: 1px solid darkorchid; */
 }
@@ -176,7 +176,7 @@ div#icones{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 55px;
+    width: 50px;
     height: 100%;
     /* border: 1px solid darkgreen; */
 }
@@ -185,7 +185,7 @@ div#icones{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 55px;
+    width: 50px;
     /* border: 1px solid darkblue; */
 }
 
@@ -213,8 +213,8 @@ div#icones{
 
 div#frame-galaxy{
     position: relative;
-    width: 17em;
-    height: 580px;
+    width: 19em;
+    height: 620px;
     /* border: 1px solid darkgoldenrod; */
 }
 
