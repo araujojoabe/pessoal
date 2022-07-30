@@ -167,7 +167,6 @@ section#sobre{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: 10px;
     flex-grow: 1;
     /* width: 500px; */
     height: 620px;
