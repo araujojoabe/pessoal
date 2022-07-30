@@ -63,6 +63,11 @@ section#perfil{
     padding: 1px;
     background-color: transparent;
 }
+@media screen and (max-width: 1000px){
+    section#perfil{
+        margin-top: 20px;
+    }
+}
 #div-perfil{
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +75,6 @@ section#perfil{
     row-gap: 10px;
     /* border: 1px solid black; */
     max-width: 370px;
-
 }
 
 #div-perfil #foto-perfil{
@@ -84,10 +88,15 @@ section#perfil{
 }
 
 #div-perfil p{
+    color: var(--cord01);
     text-align: center;
     width: 196px;
-    color: var(--cord01);
-    /* border: 1px solid yellow; */
+    /* border: 1px solid darkblue; */
+}
+
+span.aspas{
+    color: white;
+    font-family: sans-serif;
 }
 
 div#apresentacao{
@@ -223,7 +232,7 @@ div#icones{
 
 
 #icones img:active{
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 
