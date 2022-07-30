@@ -200,8 +200,7 @@ div#icones{
 
 
 #icones img:active{
-    margin-left: 15px;
-    box-shadow: -10px 0px 2px var(--cord01);
+    margin-left: 10px;
 }
 
 
@@ -229,7 +228,7 @@ div#frame-galaxy iframe{
     position: absolute;
     top: 2em;
     left: 10px;
-    width: 18em;
+    width: 17.8em;
     height: 35em;
     border: 0px;
     border-radius: 25px;
