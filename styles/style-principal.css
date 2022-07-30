@@ -170,9 +170,8 @@ section#sobre{
     column-gap: 10px;
     flex-grow: 1;
     /* width: 500px; */
-    height: 580px;
-    margin-top: 40px;
-    /* border: 1px solid darkorchid; */
+    height: 620px;
+    border: 1px solid darkorchid;
 }
 div#icones{
     display: flex;
@@ -221,8 +220,8 @@ div#frame-galaxy{
 }
 
 div#frame-galaxy img{
-    width: 17em;
-    height: 100%;
+    width: 19em;
+    height: 620px;
     /* border: 1px solid darkgreen; */
 
 } 
@@ -231,10 +230,11 @@ div#frame-galaxy iframe{
     position: absolute;
     top: 2em;
     left: 10px;
-    width: 16em;
-    height: 33em;
+    width: 18em;
+    height: 35em;
     border: 0px;
     border-radius: 25px;
+    background-color: darkblue;
 }
 
 footer{

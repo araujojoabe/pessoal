@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pag-projetos</title>
+    <title>meu-curriculo</title>
     <style>
+
+        @font-face {
+        font-family: "font-destaque";
+        src: url(../fontes/MAKISUPA.TTF);
+        format: ("truetype");
+        }
+
+        :root{
+            --cor01: #A3B4BF;
+            --cor02: #8D9FA6;
+            --cor03: #4D5859;
+            --cor04: #222625;
+            --cor05: #0D0400;
+            --cor-de-tes-01: #c9c8c8;
+            --cord01: #A67B5D;
+            --cord02: #5DA0A6;
+            --font-destaque: "font-destaque";
+        }
+         
         *{
             padding: 0px;
             margin: 0px;
-            font-family: sans-serif;
+            font-family: var(--font-destaque);
+            line-height: 1.5em;
         }
         
 
@@ -18,49 +38,71 @@
             height: 0px;
         }
 
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        body, html{
+            background-color: var(--cor03);
         }
 
-        div{
-            margin-top: 50%;
+        section{
+            margin-top: 15px;
         }
 
-        .anima{
-            font-size: 1.5em;
-            text-align: center;
-            display: inline-block;
-            color: black;
-            max-width: 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid black;
-            padding-right: 5px;
-            animation: pisca normal infinite .8s, escrever infinite 5s steps(55) both;
-            color: white;
+        main{
+            width: 18em;
+            height: 100vh;
+            background-color: var(--cor03);
+            margin: auto;
         }
 
-
-        @keyframes pisca{
-            100%{
-                border-right-color: transparent;
-            }
-        }
-
-        @keyframes escrever {
-            100%{
-                max-width: 100%;
-            }
+        div#ensino p{
+            color: var(--cord01);
         }
         
+        div#cursos p img{
+            width: 60px;
+            background-color: white;
+        }
 
+        span{
+            color: var(--cord01);
+        }
+
+        div#cursos p{
+            font-size: 1em;
+            padding: 0px 5px 0px 5px;
+        }
+
+        p.zebrar{
+            background-color: var(--cor02);
+            width: 17.4em;
+            height: 15px;
+        }
     </style>
 </head>
 <body>
- <div>
-     <p class="anima">Em breve...</p>
- </div>
+    <main>
+        <section class="formacao">
+            <div id="ensino">
+                <h1>Ensino Médio</h1>
+                <p>Olimpus - 2018</p>
+            </div>
+
+            <div id="cursos">
+                <h1>Cursos</h1>
+                <P><span>Lógica de Programação: 14 horas</span> <br> <img src="../imagens/logo-cursos/senai.png" alt="ico"> 10/2021</P>
+                <p class="zebrar"></p>
+                <p><span>Tecnoligia da Informação e Comunicação: 14 horas</span> <br> <img src="../imagens/logo-cursos/senai.png" alt="ico"> 10/2021</p>
+                <p class="zebrar"></p>
+                <p><span>Markeing Digital: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> 08/2021.</p>
+                <p class="zebrar"></p>
+                <p><span>Excel: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em andmento</p>
+                <p class="zebrar"></p>
+                <p><span>HTML5 e CSS3: 5 módulos 40 horas cada</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> 07/2022.</p>
+                <p class="zebrar"></p>
+                <p><span>Git e Github: 20 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em andamento</p>
+                <p class="zebrar"></p>
+                <p><span>Java Script: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em damento.</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
