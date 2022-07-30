@@ -171,7 +171,7 @@ section#sobre{
     flex-grow: 1;
     /* width: 500px; */
     height: 620px;
-    border: 1px solid darkorchid;
+    /* border: 1px solid darkorchid; */
 }
 div#icones{
     display: flex;
@@ -234,7 +234,6 @@ div#frame-galaxy iframe{
     height: 35em;
     border: 0px;
     border-radius: 25px;
-    background-color: darkblue;
 }
 
 footer{
