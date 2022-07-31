@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+
         .container{
             display: flex;
             flex-wrap: wrap;
@@ -21,56 +25,53 @@
             background-color: darkgray;
         }
 
-        @media screen and (max-width: 600px){
-            .container{
-                background-color: blueviolet;
-            }
-        }
-
-        div{
-            background-color: aqua;
-            width: 100px;
-            height: 100px;
-        }
-
-        
-
         #div01{
-            width: 100px;
-            height: 100px;
-            background-color: darkkhaki;
+            width: 120px;
+            height: 120px;
+            background-color: darkcyan;
+            transition: transform .5s, border .5s;
+        }
+
+        #div01:active{
+            transform: scale(.9);
+            transition: transform .5s;
+        }
+
+
+        #seila:active{
+            border: 5px solid black;
+        }
+        #seila{
+            transition: border .5s;
         }
 
         #div02{
-            width: 100px;
-            height: 100px;
-            background-color: darkcyan;
-        }
-        @media  screen and (max-width: 600px){
-            #div02{
-                background-color: black;
-            }
+            width: 120px;
+            height: 120px;
+            background-color: darkgreen;
         }
 
         #div03{
-            width: 100px;
-            height: 100px;
-            background-color: brown;
+            width: 120px;
+            height: 120px;
+            background-color: darkgoldenrod;
         }
 
         #div04{
-            width: 100px;
-            height: 100px;
-            background-color: darkolivegreen;
+            width: 120px;
+            height: 120px;
+            background-color: #1616c5;
         }
     </style>
 </head>
 <body>
-    <h1>teste com midia queries</h1>
+    <h1>teste com transform</h1>
 
     <section class="container">
-        <div>
-            <p>ola</p>
+        <div id="seila">
+            <div id="div01">
+            
+            </div>
         </div>
 
         <div id="div02">

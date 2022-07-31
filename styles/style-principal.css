@@ -165,7 +165,7 @@ div#redes-sociais{
 }
 
 div#redes-sociais a:active{
-    margin-bottom: 7px;
+    transform: scale(.7);
     background-color: var(--cord01);
 }
 
@@ -186,30 +186,32 @@ section#sobre{
         margin-top: 50px;
     }
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 355px) {
     section#sobre{
         margin-top: 20px;
         flex-wrap: wrap-reverse;
-        height: 610px;
+        height: 615px;
+        padding-bottom: 10px;
     }
 }
+
 
 div#icones{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 40px;
+    width: 50px;
     height: 100%;
     /* border: 1px solid darkgreen; */
 }
-@media screen and (max-width: 345px){
+@media screen and (max-width: 355px){
     div#icones{
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
         /* background-color: #e01818; */
         margin-top: 10px;
-        width: 290px;
-        height: 75px;
+        width: 280px;
+        height: 82px;
     }
 }
 
@@ -217,22 +219,21 @@ div#icones{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 40px;
+    width: 50px;
     /* border: 1px solid darkblue; */
 }
 
 #icones img{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+    width: 50px;
+    height: 50px;
     margin: auto;
     background-color: transparent;
-
+    transition: trasform .5s;
 }
 
 
 #icones img:active{
-    padding-left: 10px;
+    transform: scale(.7);
 }
 
 
@@ -248,7 +249,7 @@ div#frame-galaxy{
     height: 620px;
     /* border: 1px solid darkgoldenrod; */
 }
-@media screen and (max-width: 345px){
+@media screen and (max-width: 355px){
     div#frame-galaxy{
         height: 520px;
     }
@@ -260,7 +261,7 @@ div#frame-galaxy img{
     /* border: 1px solid darkgreen; */
 
 } 
-@media screen and (max-width: 345px){
+@media screen and (max-width: 355px){
     div#frame-galaxy img{
         height: 520px;
     }
@@ -288,5 +289,6 @@ footer{
 footer p{
     text-align: center;
     padding: 5px;
+    color: white;
 }
 
