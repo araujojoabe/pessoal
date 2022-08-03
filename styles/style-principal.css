@@ -38,17 +38,7 @@ body{
     /* background-attachment: fixed; */
     background-color: #202631;
 }
-@keyframes body {
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
+
 /* container-principal */
 #container-principal{
     display: flex;
@@ -96,8 +86,8 @@ section#perfil{
     max-width:340px;
     min-width: 270px;
     border-radius: 50%;
-    border: 3px solid transparent;
-    outline: 3px solid var(--cord01);
+    border: 12px solid transparent;
+    outline: 5px solid var(--cord01);
     background-color: transparent;
 }
 
@@ -170,9 +160,10 @@ div#redes-sociais{
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    box-shadow: 0px 0px 60px var(--cord02);
     transform: translateX(-2px) translateY(-2px);
-}
+    box-shadow: 0px 0px 60px var(--cord02);
+} 
+
 #redes-sociais div p{
     width: 40px;
     height: 40px;
@@ -186,14 +177,13 @@ div#redes-sociais{
     height: 37px;
     border-radius: 50%;
     background-color: var(--cord02);
+    animation: redes-sociais 2s linear infinite alternate;
 }
-
-div#redes-sociais a:active{
-    transform: scale(.7);
-    background-color: var(--cord01);
+@keyframes redes-sociais {
+    100%{
+        transform: translateY(-3px);
+    }
 }
-
-
 
 /* section-sobre */
 section#sobre{
@@ -254,12 +244,15 @@ div#icones{
     background-color: transparent;
     transition: trasform .5s;
 }
-
-
-#icones img:active{
-    transform: scale(.7);
+#icones img:hover{
+    animation: icones .3s ease-out;
 }
-
+@keyframes icones {
+    100%{
+        box-shadow: 0px 0px 130px var(--cord02);
+        transform: scale(.8);
+    }
+}
 
 #icones p{
     font-size: .7em;
