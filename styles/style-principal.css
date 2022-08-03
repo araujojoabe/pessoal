@@ -5,16 +5,20 @@
     src: url(../fontes/MAKISUPA.TTF);
     format: ("truetype");
 }
+@font-face {
+    font-family: "font-aspas";
+    src: url(../fontes/Airthan-Age.ttf);
+}
 :root{
-    --cor01: #A3B4BF;
-    --cor02: #8D9FA6;
-    --cor03: #4D5859;
-    --cor04: #222625;
-    --cor05: #0D0400;
+    --cor01: #2d3544;
+    --cor02: #202631;
+    --cor03: #14181f;
+    --cor04: #050608;
     --cor-de-tes-01: #c9c8c8;
-    --cord01: #A67B5D;
-    --cord02: #5DA0A6;
+    --cord01: #10c9bc;
+    --cord02: #14fff1;
     --font-destaque: "font-destaque";
+    --font-aspas: "font-aspas";
 }
 
 *{
@@ -31,10 +35,20 @@
 }
 
 body{
-    background-attachment: fixed;
-    background-image: linear-gradient(to top, #4D5859, #191b1b);
+    /* background-attachment: fixed; */
+    background-color: #202631;
 }
-
+@keyframes body {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
 /* container-principal */
 #container-principal{
     display: flex;
@@ -95,10 +109,10 @@ section#perfil{
 }
 
 span.aspas{
+    font-size: 1em;
     color: white;
     font-family: sans-serif;
 }
-
 div#apresentacao{
     width: 270px;
     max-height: 120px;
@@ -156,12 +170,22 @@ div#redes-sociais{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    box-shadow: 0px 0px 60px var(--cord02);
+    transform: translateX(-2px) translateY(-2px);
 }
-
-#redes-sociais a{
-    border-radius: 50%;
+#redes-sociais div p{
     width: 40px;
     height: 40px;
+    background-color: var(--cord02);
+    filter: blur(15px);
+    border-radius: 2px;
+    transform: translateY(-15px) perspective(24px) rotateX(50deg) scale(1, 0.35);
+}
+#redes-sociais div{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: var(--cord02);
 }
 
 div#redes-sociais a:active{
