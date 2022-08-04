@@ -14,16 +14,13 @@
         }
 
         :root{
-            --cor01: #A3B4BF;
-            --cor02: #8D9FA6;
-            --cor03: #4D5859;
-            --cor04: #222625;
-            --cor05: #0D0400;
+            --cor01: #2d3544;
+            --cor02: #202631;
+            --cor03: #14181f;
+            --cor04: #050608;
             --cor-de-tes-01: #c9c8c8;
-            --cord01: #cc9974;
-            --cord02: #A67B5D;
-            --cord03: #6d513e;
-            --cord04: #5DA0A6;
+            --cord01: #16dbce;
+            --cord02: #36fcee;
             --font-destaque: "font-destaque";
         }
 
@@ -38,9 +35,6 @@
 
         body{
             background-color: var(--cor04);
-            justify-content: center;
-            display: flex;
-            align-items: flex-start;
         }
         
 
@@ -50,15 +44,23 @@
         }
 
         main{
-            background-color: var(--cor03);
+            background-color: var(--cor01);
+            margin: auto;
             width: 18em;
             height: 1210px;
             overflow: hidden;
-            animation: iframe 1.5s ease-in;
+            animation: iframe 4s linear;
+            border-radius: 20px;
         }
         @keyframes iframe {
             0%{
                 height: 0px;
+            }
+            25%{
+                height: 450px;
+            }
+            50%{
+                height: 250px;
             }
             100%{
                 height: 1210px;
@@ -106,16 +108,16 @@
         div#hobbies img{
             width: 90px;
             border-radius: 50%;
-            border: 2px solid var(--cord02);
+            border: 4px solid var(--cord02);
+            box-shadow: 2px 5px 5px #00000094;
         }
 
         div#hobbies h2{
             width: 100%;
             margin-left: 10px;
             font-family: var(--font-destaque);
-            color: var(--cord02);
+            color: var(--cord01);
         }
-        
     </style>
 </head>
 <body>
@@ -160,6 +162,6 @@
              <img src="../imagens/hobbies/img-21.png" alt="ico">
         </div>
     
- </main>
+    </main>
 </body>
 </html>

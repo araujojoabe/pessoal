@@ -14,14 +14,13 @@
         }
 
         :root{
-            --cor01: #A3B4BF;
-            --cor02: #8D9FA6;
-            --cor03: #4D5859;
-            --cor04: #222625;
-            --cor05: #0D0400;
+            --cor01: #2d3544;
+            --cor02: #202631;
+            --cor03: #14181f;
+            --cor04: #050608;
             --cor-de-tes-01: #c9c8c8;
-            --cord01: #A67B5D;
-            --cord02: #5DA0A6;
+            --cord01: #16dbce;
+            --cord02: #36fcee;
             --font-destaque: "font-destaque";
         }
          
@@ -30,6 +29,7 @@
             margin: 0px;
             font-family: var(--font-destaque);
             line-height: 1.5em;
+            box-sizing: border-box;
         }
         
 
@@ -44,18 +44,32 @@
 
         main{
             width: 17.8em;
+            border-radius: 20px;
+            overflow: hidden;
             height: 770px;
-            background-color: var(--cor04);
+            background-color: var(--cor01);
             margin: auto;
+            animation: main 1.5s linear;
         }
-    
-
+        @keyframes main {
+            0%{
+                width: 0px;
+                height: 0px;
+            }
+            100%{
+                width: 17.8em;
+                height: 770px;
+            }
+        }
         div#ensino{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             row-gap: 10px;
+            width: 284px;
+            overflow: hidden;
+            /* border: 1px solid blue; */
         }
 
         div#ensino h1{
@@ -83,12 +97,16 @@
         }
 
         div#cursos p{
+            overflow: hidden;
             font-size: 1em;
+            width: 284px;
             padding: 0px 0px 0px 5px;
         }
 
         p.zebrar{
+            overflow: hidden;
             background-color: var(--cor02);
+            width: 284px;
             height: 10px;
         }
     </style>
@@ -108,17 +126,17 @@
                 <p class="zebrar"></p>
                 <p><span>Tecnoligia da Informação e Comunicação: 14 horas</span> <br> <img src="../imagens/logo-cursos/senai.png" alt="ico"> 10/2021</p>
                 <p class="zebrar"></p>
-                <p><span>Markeing Digital: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> 08/2021.</p>
+                <p><span>Markeing Digital: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> 08/2021</p>
                 <p class="zebrar"></p>
                 <p><span>Excel: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em andmento</p>
                 <p class="zebrar"></p>
-                <p><span>HTML5 e CSS3: 5 módulos 40 horas cada</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> 07/2022.</p>
+                <p><span>HTML5 e CSS3: 5 módulos 40 horas cada</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> 07/2022</p>
                 <p class="zebrar"></p>
                 <p><span>Git e Github: 20 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em andamento</p>
                 <p class="zebrar"></p>
-                <p><span>Java Script: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em damento.</p>
+                <p><span>Java Script: 40 horas</span> <br> <img src="../imagens/logo-cursos/curso-em-video.png" alt="ico"> Em damento</p>
                 <p class="zebrar"></p>
-                <p><span>Phyton</span> <br> Em breve... </p>
+                <p><span>Phyton</span> <br> Em breve</p>
                 <p class="zebrar"></p>
                 <p><span>PHP</span> <br> Em breve</p>
                 <p class="zebrar"></p>

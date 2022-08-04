@@ -48,7 +48,6 @@ body{
     align-items: center;
     row-gap: 10px;
     column-gap: 10px;
-    transition: wrap 5s;
 }
 
 /* section-perfil */
@@ -113,6 +112,7 @@ div#apresentacao{
     font-family: var(--font-destaque);
     color: var(--cor-de-tes-01);
     font-weight: bold;
+    text-shadow: 5px 2px 2px #000000a2;
 }
 
 div#apresentacao span{
@@ -146,13 +146,11 @@ div#apresentacao span{
 
 div#redes-sociais{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
-    row-gap: 5px;
+    align-items: flex-start;
     column-gap: 5px;
     width: 270px;
-    height: 50px;
+    height: 40px;
     /* border: 1px solid darkgreen; */
 }
 
@@ -181,7 +179,7 @@ div#redes-sociais{
 }
 @keyframes redes-sociais {
     100%{
-        transform: translateY(-4px);
+        transform: translateY(-3px);
     }
 }
 
@@ -244,8 +242,8 @@ div#icones{
     background-color: transparent;
     transition: trasform .5s;
 }
-#icones img:hover{
-    animation: icones .3s ease-out;
+#icones img:active{
+    animation: icones .2s ease-out;
 }
 @keyframes icones {
     100%{
@@ -257,7 +255,7 @@ div#icones{
 #icones p{
     font-size: .7em;
     text-align: center;
-    color: var(--cor-de-tes-01);
+    color: var(--cord01);
 }
 
 div#frame-galaxy{

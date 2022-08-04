@@ -7,14 +7,13 @@
     <title>projetos</title>
     <style>
 :root{
-    --cor01: #A3B4BF;
-    --cor02: #8D9FA6;
-    --cor03: #4D5859;
-    --cor04: #222625;
-    --cor05: #0D0400;
+    --cor01: #2d3544;
+    --cor02: #202631;
+    --cor03: #14181f;
+    --cor04: #050608;
     --cor-de-tes-01: #c9c8c8;
-    --cord01: #A67B5D;
-    --cord02: #5DA0A6;
+    --cord01: #16dbce;
+    --cord02: #36fcee;
     --font-destaque: "font-destaque";
 }
         @font-face {
@@ -38,16 +37,23 @@
         main{
             display: flex;
             justify-content: center;
-            align-items: center;
             row-gap: 20px;
             flex-wrap: wrap;
             width: 17.5em;
             padding: 20px 2px 20px 2px;
             margin: auto;
-            background-color: var(--cor03);
+            background-color: var(--cor01);
+            overflow: hidden;
+            animation: main 2s;
         }
-
-
+        @keyframes main {
+            0%{
+                width: 0px;
+            }
+            100%{
+                width: 17.5em;
+            }
+        }
         div.em-breve{
             display: flex;
             justify-content: center;
@@ -69,7 +75,7 @@
 
         a{
             text-decoration: none;
-            color: var(--cord02);
+            color: var(--cor-de-tes-01);
             font-family: var(--font-destaque);
         }
 
