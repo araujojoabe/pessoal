@@ -181,7 +181,7 @@ div#redes-sociais{
 }
 @keyframes redes-sociais {
     100%{
-        transform: translateY(-3px);
+        transform: translateY(-4px);
     }
 }
 
